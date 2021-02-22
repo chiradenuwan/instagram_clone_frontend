@@ -26,7 +26,7 @@ const BottomNavigator = createMaterialBottomTabNavigator({
       showLabel: false,
       barStyle: { backgroundColor: '#FFFFFF' },
       tabBarIcon: ({ color, focused }) => (
-        <Image style={{ overflow: 'hidden', resizeMode: 'cover', width: 26, height: 26 }} resizeMode='cover' source={focused ? ActiveHome : ActiveHome} />
+        <Image style={{ overflow: 'hidden', resizeMode: 'cover', width: 20, height: 20 }} resizeMode='cover' source={focused ? ActiveHome : ActiveHome} />
       )
     },
     tabBarOptions: {
@@ -42,7 +42,7 @@ const BottomNavigator = createMaterialBottomTabNavigator({
       tabBarColor: '#FFFFFF',
       barStyle: { backgroundColor: '#FFFFFF' },
       tabBarIcon: ({ color, focused }) => (
-        <Image style={{ overflow: 'hidden', resizeMode: 'cover', width: 26, height: 26 }} resizeMode='cover' source={focused ? Inactivesearch : Inactivesearch} />
+        <Image style={{ overflow: 'hidden', resizeMode: 'cover', width: 20, height: 20 }} resizeMode='cover' source={focused ? Inactivesearch : Inactivesearch} />
       )
     },
     tabBarOptions: {
@@ -57,7 +57,7 @@ const BottomNavigator = createMaterialBottomTabNavigator({
       tabBarColor: '#FFFFFF',
       barStyle: { backgroundColor: '#FFFFFF' },
       tabBarIcon: ({ color, focused }) => (
-        <Image style={{ overflow: 'hidden', resizeMode: 'cover', width: 26, height: 26 }} resizeMode='cover' source={focused ? Inactiveprofile : Inactiveprofile} />
+        <Image style={{ overflow: 'hidden', resizeMode: 'cover', width: 20, height: 20 }} resizeMode='cover' source={focused ? Inactiveprofile : Inactiveprofile} />
       )
     },
     tabBarOptions: {

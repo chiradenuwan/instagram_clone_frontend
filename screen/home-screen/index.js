@@ -109,7 +109,7 @@ class App extends Component {
         <View style={{ paddingLeft: 30, paddingRight: 30, height: "100%", marginTop: 20 }}>
           <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
             <TouchableOpacity>
-              <Image style={{ width: 30, height: 30 }} resizeMode="cover"
+              <Image style={{ width: 20, height: 20 }} resizeMode="cover"
                      source={require("../../assets/icon/camera.png")}
               />
             </TouchableOpacity>
@@ -120,7 +120,7 @@ class App extends Component {
               />
             </View>
             <TouchableOpacity>
-              <Image style={{ width: 30, height: 30 }} resizeMode="cover"
+              <Image style={{ width: 20, height: 20 }} resizeMode="cover"
                      source={require("../../assets/icon/message.png")}
               />
             </TouchableOpacity>
