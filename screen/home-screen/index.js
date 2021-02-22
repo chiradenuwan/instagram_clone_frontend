@@ -7,7 +7,6 @@ class App extends Component {
     feed: [{}, {}, {}, {}],
     ismodal: false,
   };
-
   get pagination() {
     const { entries, activeSlide } = this.carasoul.carouselItems;
     return (

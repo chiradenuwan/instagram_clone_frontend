@@ -7,9 +7,9 @@ import { createMaterialBottomTabNavigator } from 'react-navigation-material-bott
 import HomeScreen from '../../screen/home-screen/index';
 
 
-import ActiveHome from '../../assets/icon/message.png';
-import Inactivesearch from '../../assets/icon/message.png';
-import Inactiveprofile from '../../assets/img/Heart.png';
+import ActiveHome from '../../assets/icon/home.png';
+import Inactivesearch from '../../assets/icon/search.png';
+import Inactiveprofile from '../../assets/icon/user.png';
 import {
   Image,
 } from 'react-native';
@@ -26,7 +26,7 @@ const BottomNavigator = createMaterialBottomTabNavigator({
       showLabel: false,
       barStyle: { backgroundColor: '#FFFFFF' },
       tabBarIcon: ({ color, focused }) => (
-        <Image style={{ overflow: 'hidden', resizeMode: 'cover', width: 20, height: 20 }} resizeMode='cover' source={focused ? ActiveHome : ActiveHome} />
+        <Image style={{ overflow: 'hidden', resizeMode: 'cover', width: 26, height: 26 }} resizeMode='cover' source={focused ? ActiveHome : ActiveHome} />
       )
     },
     tabBarOptions: {
@@ -42,7 +42,7 @@ const BottomNavigator = createMaterialBottomTabNavigator({
       tabBarColor: '#FFFFFF',
       barStyle: { backgroundColor: '#FFFFFF' },
       tabBarIcon: ({ color, focused }) => (
-        <Image style={{ overflow: 'hidden', resizeMode: 'cover', width: 20, height: 20 }} resizeMode='cover' source={focused ? Inactivesearch : Inactivesearch} />
+        <Image style={{ overflow: 'hidden', resizeMode: 'cover', width: 26, height: 26 }} resizeMode='cover' source={focused ? Inactivesearch : Inactivesearch} />
       )
     },
     tabBarOptions: {
@@ -57,7 +57,7 @@ const BottomNavigator = createMaterialBottomTabNavigator({
       tabBarColor: '#FFFFFF',
       barStyle: { backgroundColor: '#FFFFFF' },
       tabBarIcon: ({ color, focused }) => (
-        <Image style={{ overflow: 'hidden', resizeMode: 'cover', width: 20, height: 20 }} resizeMode='cover' source={focused ? Inactiveprofile : Inactiveprofile} />
+        <Image style={{ overflow: 'hidden', resizeMode: 'cover', width: 26, height: 26 }} resizeMode='cover' source={focused ? Inactiveprofile : Inactiveprofile} />
       )
     },
     tabBarOptions: {
@@ -71,7 +71,7 @@ const BottomNavigator = createMaterialBottomTabNavigator({
 });
 
 const Navigation = createStackNavigator({
-    // BottomNavigator: BottomNavigator,
+    BottomNavigator: BottomNavigator,
     HomeScreen: HomeScreen,
   },
   {
