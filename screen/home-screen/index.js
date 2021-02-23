@@ -58,6 +58,9 @@ class App extends Component {
       ],
     };
   }
+  changeImageHandler = async () => {
+    this.props.navigation.navigate({ routeName: 'PhotoUploadScreen' });
+  };
 
   _renderItem({ item, index }) {
     return (
@@ -108,7 +111,7 @@ class App extends Component {
       >
         <View style={{ paddingLeft: 30, paddingRight: 30, height: "100%", marginTop: 20 }}>
           <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={this.changeImageHandler}>
               <Image style={{ width: 20, height: 20 }} resizeMode="cover"
                      source={require("../../assets/icon/camera.png")}
               />
